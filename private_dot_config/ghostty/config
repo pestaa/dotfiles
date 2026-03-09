@@ -1,0 +1,14 @@
+background-opacity = 0.9
+background-opacity-cells = true
+cursor-style-blink = false
+cursor-style = block
+font-size = 12
+maximize = true
+shell-integration-features = no-cursor
+theme = light:Catppuccin Frappe, dark:Catppuccin Mocha
+window-decoration = none
+quick-terminal-position = top
+quick-terminal-size = 30%
+quick-terminal-animation-duration = 0.1
+keybind = global:super+`=toggle_quick_terminal
+keybind = global:super+0=toggle_quick_terminal
