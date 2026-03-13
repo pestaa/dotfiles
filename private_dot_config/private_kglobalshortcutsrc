@@ -276,7 +276,7 @@ toggle do not disturb=none,,Toggle do not disturb
 
 [services][com.mitchellh.ghostty.desktop]
 _launch=
-new-window=Meta+Space
+new-window=Meta+Return
 
 [services][org.kde.dolphin.desktop]
 _launch=none
