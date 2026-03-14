@@ -19,3 +19,5 @@
 	conflictStyle = zdiff3
 [pull]
 	rebase = true
+[credential]
+	helper = libsecret

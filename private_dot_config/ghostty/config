@@ -1,6 +1,5 @@
 background-opacity = 0.9
 background-opacity-cells = true
-command = tmux
 cursor-style-blink = false
 cursor-style = block
 font-size = 12

@@ -227,6 +227,11 @@ seekforwardmedia=Media Fast Forward,Media Fast Forward,Media playback seek forwa
 seekforwardmedialong=,,Media playback seek forward 30s
 stopmedia=Media Stop,Media Stop,Stop media playback
 
+[net.local.ghostty]
+LOGO+0=,Meta+0,toggle_quick_terminal
+LOGO+grave=,Meta+`,toggle_quick_terminal
+_k_friendly_name=Tmux in Ghostty
+
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
 Decrease Screen Brightness=Monitor Brightness Down,Monitor Brightness Down,Decrease Screen Brightness
@@ -276,14 +281,15 @@ toggle do not disturb=none,,Toggle do not disturb
 
 [services][com.mitchellh.ghostty.desktop]
 _launch=
-new-window=Meta+Return
+new-window=none
+
+[services][net.local.ghostty.desktop]
+_launch=Meta+Return
 
 [services][org.kde.dolphin.desktop]
 _launch=none
 
 [services][org.kde.spectacle.desktop]
-CurrentMonitorScreenShot=
-OpenWithoutScreenshot=
 RecordRegion=none
 _launch=Print
 
