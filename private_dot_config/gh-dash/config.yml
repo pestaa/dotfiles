@@ -83,6 +83,10 @@ keybindings:
       name: Merge via Rebase
       command: gh pr merge {{.PrNumber}} --rebase --delete-branch
 
+    - key: e
+      name: Enhance
+      command: gh enhance {{.PrNumber}}
+
       # Overrides the default 'u' to update the branch via rebase
     - key: u
       name: Update via Rebase
