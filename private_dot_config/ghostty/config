@@ -16,3 +16,7 @@ keybind = unconsumed:ctrl+h=goto_split:left
 keybind = unconsumed:ctrl+j=goto_split:bottom
 keybind = unconsumed:ctrl+k=goto_split:top
 keybind = unconsumed:ctrl+l=goto_split:right
+keybind = ctrl+shift+h=new_split:left
+keybind = ctrl+shift+j=new_split:down
+keybind = ctrl+shift+k=new_split:up
+keybind = ctrl+shift+l=new_split:right
