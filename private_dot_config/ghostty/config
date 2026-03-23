@@ -2,7 +2,7 @@ background-opacity = 0.9
 background-opacity-cells = true
 cursor-style-blink = false
 cursor-style = block
-font-size = 12
+font-size = 10
 maximize = true
 shell-integration-features = no-cursor
 theme = light:Catppuccin Frappe, dark:Catppuccin Mocha
@@ -12,3 +12,7 @@ quick-terminal-size = 40%
 quick-terminal-animation-duration = 0.1
 keybind = global:super+`=toggle_quick_terminal
 keybind = global:super+0=toggle_quick_terminal
+keybind = unconsumed:ctrl+h=goto_split:left
+keybind = unconsumed:ctrl+j=goto_split:bottom
+keybind = unconsumed:ctrl+k=goto_split:top
+keybind = unconsumed:ctrl+l=goto_split:right

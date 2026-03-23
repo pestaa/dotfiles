@@ -12,6 +12,7 @@ return {
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.biome" },
   { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.full-dadbod" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.laravel" },
@@ -22,4 +23,5 @@ return {
   { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.pack.xml" },
   { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.search.grug-far-nvim" },
 }
