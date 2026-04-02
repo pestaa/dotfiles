@@ -11,6 +11,7 @@ _k_friendly_name=Keyboard Layout Switcher
 
 [com.mitchellh.ghostty]
 LOGO+0=Meta+0,Meta+0,toggle_quick_terminal
+LOGO+Return=Meta+Return,Meta+Return,new_window
 LOGO+grave=Meta+`,Meta+`,toggle_quick_terminal
 _k_friendly_name=Ghostty
 
@@ -31,7 +32,7 @@ mute=Volume Mute,Volume Mute,Mute
 
 [ksmserver]
 Halt Without Confirmation=none,,Shut Down Without Confirmation
-Lock Session=Meta+L\tScreensaver,Meta+L\tScreensaver,Lock Session
+Lock Session=Screensaver,Meta+L\tScreensaver,Lock Session
 Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Show Logout Screen
 Log Out Without Confirmation=none,,Log Out Without Confirmation
 LogOut=none,,Log Out
