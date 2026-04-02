@@ -21,3 +21,5 @@
 	rebase = true
 [credential]
 	helper = libsecret
+[fetch]
+	prune = true
