@@ -91,6 +91,11 @@ keybindings:
     - key: u
       name: Update via Rebase
       command: gh pr update-branch {{.PrNumber}} --rebase
+
+  issues:
+    - key: C
+      builtin: checkout
+
 repoPaths: {}
 theme:
   ui:
