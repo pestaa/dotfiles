@@ -93,8 +93,9 @@ keybindings:
       command: gh pr update-branch {{.PrNumber}} --rebase
 
   issues:
-    - key: C
-      builtin: checkout
+    - key: b
+      name: checkout issue branch
+      command: gh issue develop {{.IssueNumber}} --repo {{.RepoName}} --checkout
 
 repoPaths: {}
 theme:
