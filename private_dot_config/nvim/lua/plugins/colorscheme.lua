@@ -4,6 +4,6 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- Set your active colorscheme here
-    colorscheme = "catppuccin-frappe",
+    colorscheme = "tokyonight-day",
   },
 }

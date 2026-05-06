@@ -2,15 +2,10 @@ background-opacity = 0.9
 background-opacity-cells = true
 cursor-style-blink = false
 cursor-style = block
-font-size = 10
-maximize = true
-shell-integration-features = no-cursor
-theme = light:Catppuccin Frappe, dark:Catppuccin Mocha
-window-decoration = none
-quick-terminal-position = top
-quick-terminal-size = 40%
-keybind = global:super+`=toggle_quick_terminal
+font-size = 12
 keybind = global:super+0=toggle_quick_terminal
+keybind = global:super+enter=new_window
+keybind = global:super+`=toggle_quick_terminal
 keybind = super+h=goto_split:left
 keybind = super+j=goto_split:bottom
 keybind = super+k=goto_split:top
@@ -19,4 +14,13 @@ keybind = super+shift+h=new_split:left
 keybind = super+shift+j=new_split:down
 keybind = super+shift+k=new_split:up
 keybind = super+shift+l=new_split:right
-keybind = global:super+enter=new_window
+maximize = true
+mouse-hide-while-typing = true
+quick-terminal-position = top
+quick-terminal-size = 40%
+shell-integration-features = no-cursor
+theme = light:TokyoNight Day, dark:TokyoNight Moon
+window-decoration = none
+window-padding-color = background
+window-padding-x = 4
+window-padding-y = 4

@@ -9,6 +9,12 @@ Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Ke
 Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
+[btop]
+LOGO+0=,Meta+0,toggle_quick_terminal
+LOGO+Return=,Meta+Return,new_window
+LOGO+grave=,Meta+`,toggle_quick_terminal
+_k_friendly_name=btop++
+
 [com.mitchellh.ghostty]
 LOGO+0=Meta+0,Meta+0,toggle_quick_terminal
 LOGO+Return=Meta+Return,Meta+Return,new_window
@@ -295,6 +301,12 @@ CurrentMonitorScreenShot=
 OpenWithoutScreenshot=
 RecordRegion=none
 _launch=Print
+
+[surface-transient]
+LOGO+0=,Meta+0,toggle_quick_terminal
+LOGO+Return=,Meta+Return,new_window
+LOGO+grave=,Meta+`,toggle_quick_terminal
+_k_friendly_name=surface-transient
 
 [wacomtablet]
 Map to fullscreen=Meta+Ctrl+F,Meta+Ctrl+F,Map to fullscreen
