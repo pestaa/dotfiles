@@ -73,7 +73,7 @@ MoveZoomDown=none,none,Move Zoomed Area Downwards
 MoveZoomLeft=none,none,Move Zoomed Area to Left
 MoveZoomRight=none,none,Move Zoomed Area to Right
 MoveZoomUp=none,none,Move Zoomed Area Upwards
-Overview=Meta+H,Meta+W,Toggle Overview
+Overview=none,Meta+W,Toggle Overview
 Setup Window Shortcut=none,,Setup Window Shortcut
 Show Desktop=none,Meta+D,Peek at Desktop
 Suspend Compositing=Alt+Shift+F12,Alt+Shift+F12,Suspend Compositing
@@ -104,7 +104,7 @@ Switch to Desktop 23=,,Switch to Desktop 23
 Switch to Desktop 24=,,Switch to Desktop 24
 Switch to Desktop 25=,,Switch to Desktop 25
 Switch to Desktop 3=Meta+E,Meta+F3\tCtrl+F3,Switch to Desktop 3
-Switch to Desktop 4=Meta+4,Meta+F4\tCtrl+F4,Switch to Desktop 4
+Switch to Desktop 4=Meta+R,Meta+F4\tCtrl+F4,Switch to Desktop 4
 Switch to Desktop 5=Meta+A,,Switch to Desktop 5
 Switch to Desktop 6=Meta+S,,Switch to Desktop 6
 Switch to Desktop 7=Meta+D,,Switch to Desktop 7
@@ -298,6 +298,8 @@ _launch=Meta+Return
 _launch=none
 
 [services][org.kde.spectacle.desktop]
+CurrentMonitorScreenShot=
+OpenWithoutScreenshot=
 RecordRegion=none
 _launch=Print
 
