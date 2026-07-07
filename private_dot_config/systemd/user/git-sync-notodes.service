@@ -1,0 +1,16 @@
+# /home/pestaa/.config/systemd/user/git-sync-notodes.service
+[Unit]
+Description=Git Sync on Inotify for Notodes
+After=network-online.target
+Wants=network-online.target
+AssertPathExists=/home/pestaa/notodes
+
+[Service]
+Type=simple
+ExecStart=/home/pestaa/.local/bin/git-sync-on-inotify
+WorkingDirectory=/home/pestaa/notodes
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=default.target
