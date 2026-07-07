@@ -6,8 +6,8 @@ font-size = 12
 keybind = global:super+0=toggle_quick_terminal
 keybind = global:super+enter=new_window
 keybind = global:super+`=toggle_quick_terminal
-keybind = page_up=scroll_page_fractional:-0.5
-keybind = page_down=scroll_page_fractional:0.5
+keybind = performable:page_up=scroll_page_fractional:-0.5
+keybind = performable:page_down=scroll_page_fractional:0.5
 keybind = super+h=goto_split:left
 keybind = super+j=goto_split:bottom
 keybind = super+k=goto_split:top
@@ -23,7 +23,7 @@ keybind = super+ctrl+l=resize_split:right,20
 maximize = true
 mouse-hide-while-typing = true
 quick-terminal-position = top
-quick-terminal-size = 40%
+quick-terminal-size = 55%
 quit-after-last-window-closed = false
 shell-integration-features = no-cursor
 theme = light:TokyoNight Day, dark:TokyoNight Moon

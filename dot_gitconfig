@@ -23,3 +23,5 @@
 	helper = libsecret
 [fetch]
 	prune = true
+[github]
+	user = pestaa
