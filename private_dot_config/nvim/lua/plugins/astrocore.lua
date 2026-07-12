@@ -8,75 +8,34 @@ return {
   "AstroNvim/astrocore",
   ---@type AstroCoreOpts
   opts = {
-    -- Configure core features of AstroNvim
-    features = {
-      large_buf = { size = 1024 * 256, lines = 10000 }, -- set global limits for large files for disabling features like treesitter
-      autopairs = true, -- enable autopairs at start
-      cmp = true, -- enable completion at start
-      diagnostics = { virtual_text = true, virtual_lines = false }, -- diagnostic settings on startup
-      highlighturl = true, -- highlight URLs at start
-      notifications = true, -- enable notifications at start
-    },
-    -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
-    diagnostics = {
-      virtual_text = true,
-      underline = true,
-    },
-    -- passed to `vim.filetype.add`
-    filetypes = {
-      -- see `:h vim.filetype.add` for usage
-      extension = {
-        foo = "fooscript",
-      },
-      filename = {
-        [".foorc"] = "fooscript",
-      },
-      pattern = {
-        [".*/etc/foo/.*"] = "fooscript",
-      },
-    },
     -- vim options can be configured here
     options = {
       opt = { -- vim.opt.<key>
         relativenumber = true, -- sets vim.opt.relativenumber
         number = true, -- sets vim.opt.number
-        spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
-        wrap = true, -- sets vim.opt.wrap
-      },
-      g = { -- vim.g.<key>
-        -- configure global vim variables (vim.g)
-        -- NOTE: `mapleader` and `maplocalleader` must be set in the AstroNvim opts or before `lazy.setup`
-        -- This can be found in the `lua/lazy_setup.lua` file
       },
     },
-    -- Mappings can be configured through AstroCore as well.
-    -- NOTE: keycodes follow the casing in the vimdocs. For example, `<Leader>` must be capitalized
+    -- mappings can be configured here (see `:h astrocore-mappings`)
     mappings = {
-      -- first key is the mode
       n = {
-        -- second key is the lefthand side of the map
-
-        -- navigate buffer tabs
-        ["]b"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
-        ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
-
-        -- mappings seen under group name "Buffer"
-        ["<Leader>bd"] = {
+        -- GitHub (snacks `gh` module) — remote actions, distinct from the
+        -- local `<Leader>g` git maps. `<Leader>gp` is taken (Preview Git hunk).
+        ["<Leader>gh"] = { desc = "󰊤 GitHub" },
+        ["<Leader>ghp"] = { function() Snacks.picker.gh_pr() end, desc = "Pull requests (open)" },
+        ["<Leader>ghP"] = { function() Snacks.picker.gh_pr { state = "all" } end, desc = "Pull requests (all)" },
+        ["<Leader>ghi"] = { function() Snacks.picker.gh_issue() end, desc = "Issues (open)" },
+        ["<Leader>ghI"] = { function() Snacks.picker.gh_issue { state = "all" } end, desc = "Issues (all)" },
+        -- gh_diff requires a PR number (bare call errors), so prompt for one
+        ["<Leader>ghd"] = {
           function()
-            require("astroui.status.heirline").buffer_picker(
-              function(bufnr) require("astrocore.buffer").close(bufnr) end
-            )
+            vim.ui.input({ prompt = "PR number: " }, function(n)
+              n = tonumber(n)
+              if n then Snacks.picker.gh_diff { pr = n } end
+            end)
           end,
-          desc = "Close buffer from tabline",
+          desc = "PR diff (by number)",
         },
-
-        -- tables with just a `desc` key will be registered with which-key if it's installed
-        -- this is useful for naming menus
-        -- ["<Leader>b"] = { desc = "Buffers" },
-
-        -- setting a mapping to false will disable it
-        -- ["<C-S>"] = false,
       },
     },
   },

@@ -1,11 +1,11 @@
 ---@type LazySpec
 return {
-  -- == Examples of Overriding Plugins ==
-
-  -- customize dashboard options
   {
     "folke/snacks.nvim",
     opts = {
+      -- enable the GitHub (gh) integration; keymaps live in astrocore.lua.
+      -- requires the `gh` CLI installed and authenticated (`gh auth login`).
+      gh = {},
       dashboard = {
         preset = {
           header = table.concat({
