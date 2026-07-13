@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Query the current color scheme via the XDG desktop portal.
+#   0 = no preference   1 = prefer dark   2 = prefer light
+scheme=$(qdbus6 org.freedesktop.portal.Desktop \
+  /org/freedesktop/portal/desktop \
+  org.freedesktop.portal.Settings.Read \
+  org.freedesktop.appearance color-scheme 2>/dev/null | grep -oE '[0-9]+' | tail -n1)
+
+if [[ "$scheme" == "2" ]]; then
+  mode=--light
+else
+  mode=--dark   # covers 1 (prefer dark) and 0 (no preference)
+fi
+
+exec delta "$mode" "$@"
+
