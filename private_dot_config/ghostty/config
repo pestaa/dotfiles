@@ -6,8 +6,8 @@ font-size = 13
 keybind = global:super+0=toggle_quick_terminal
 keybind = global:super+enter=new_window
 keybind = global:super+`=toggle_quick_terminal
-keybind = performable:page_up=scroll_page_fractional:-0.5
-keybind = performable:page_down=scroll_page_fractional:0.5
+# keybind = performable:page_up=scroll_page_fractional:-0.5
+# keybind = performable:page_down=scroll_page_fractional:0.5
 keybind = performable:super+h=goto_split:left
 keybind = performable:super+j=goto_split:bottom
 keybind = performable:super+k=goto_split:top

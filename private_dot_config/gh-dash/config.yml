@@ -105,7 +105,7 @@ theme:
       showSeparator: true
       compact: true
 pager:
-  diff: ""
+  diff: delta-auto --line-numbers
 confirmQuit: false
 showAuthorIcons: true
 smartFilteringAtLaunch: true
